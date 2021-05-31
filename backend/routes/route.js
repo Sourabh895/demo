@@ -8,7 +8,7 @@ router.get('/songs', async(req, res) => {
     res.send(songs);
 })
 
-router.get('./songs:/id', async(req, res) => {
+router.get('/songs/:id', async(req, res) => {
     const songs = await Song.findById(req.params.id);
     res.send(songs);
 })

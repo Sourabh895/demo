@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 
 //DataBase
-mongoose.connect('mongodb://localhost:27017/themeSong', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://neeraj_31:Mongo@98_7@cluster0.qpnya.mongodb.net/Music-App?retryWrites=true&w=majorit', {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => {
     console.log("DB Connected")
 })
